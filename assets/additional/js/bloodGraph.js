@@ -20,16 +20,12 @@ function renderGraph(bloodDetails = null) {
             legendMarkerColor: "red",
             legendText: "Scale: 100 = One Hundred Blood Package",
             dataPoints: [
-                { y: 800, label: "A" },
                 { y: 920, label: "A-" },
                 { y: 300, label: "A+" },
-                { y: 800, label: "B" },
                 { y: 150, label: "B-" },
                 { y: 20, label: "B+"},
-                { y: 630, label: "AB" },
                 { y: 223, label: "AB-" },
                 { y: 520, label: "AB+" },
-                { y: 344, label: "O" },
                 { y: 660, label: "O-" },
                 { y: 550, label: "O+" }
             ]

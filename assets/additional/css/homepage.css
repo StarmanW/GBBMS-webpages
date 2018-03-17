@@ -4,7 +4,7 @@
     background-color: #0d6786;
 }
 
-/*title card on hover transform funtion*/
+/*title card screen size based on hover transform funtion*/
 @media only screen and (min-width: 200px) and (max-width: 580px) {
     #fa-card-icon-1,
 	#fa-card-icon-2,
