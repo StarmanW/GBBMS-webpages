@@ -237,7 +237,7 @@ optgroup,
 select,
 textarea {
     margin: 0;
-    font-family: inherit;
+    font-family: 'Rubik';
     font-size: inherit;
     line-height: inherit
 }
