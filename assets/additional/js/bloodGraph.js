@@ -12,7 +12,6 @@ function renderGraph(bloodDetails = null) {
         },
         axisX: {
             title: "Blood Types",
-            interval: 1
         },
         data: [{
             type: "column",
@@ -23,7 +22,7 @@ function renderGraph(bloodDetails = null) {
                 { y: 920, label: "A-" },
                 { y: 300, label: "A+" },
                 { y: 150, label: "B-" },
-                { y: 20, label: "B+"},
+                { y: 50, label: "B+"},
                 { y: 223, label: "AB-" },
                 { y: 520, label: "AB+" },
                 { y: 660, label: "O-" },
