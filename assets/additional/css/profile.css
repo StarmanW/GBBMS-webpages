@@ -1,25 +1,3 @@
-
-@media only screen and (min-width: 200px) and (max-width: 580px) {
-    .display-7 {
-        font-size:calc(.75em + .40vw);   
-    }
-
-    .card-block {
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-}
-@media only screen and (min-width: 450px) and (max-width: 1200px) {
-    .card-block {
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-	
-}
-@media only screen and (min-width: 1200px) {
-
-}
-
 .profile-table-wrap{
     overflow: auto;
 }
@@ -36,3 +14,38 @@
 .profile-table-btn-center {
     text-align: center;
 }
+
+.div-button-center {
+    text-align: center;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 580px) {
+    .display-7 {
+        font-size:calc(.75em + .40vw);   
+    }
+
+    .card-block {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .profile-btn {
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 450px) and (max-width: 1200px) {
+    .card-block {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .profile-btn {
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .profile-btn {
+        width: 30%;
+    }
+}
+
