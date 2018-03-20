@@ -27,6 +27,31 @@ body {
 
 /* END SECTION */
 
+/*center button in div*/
+.button-div-center {
+    text-align:center;
+}
+/*end*/
+
+/*reset password tab*/
+@media only screen and (min-width: 200px) and (max-width: 580px) {
+    .reset-tab-btn1,
+    .reset-tab-btn2 {
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 450px) and (max-width: 1200px) {
+ 	
+}
+@media only screen and (min-width: 1200px) {
+    .reset-tab-btn1,
+    .reset-tab-btn2 {
+        width: 35%;
+    }
+
+}
+/*end*/
+
 .login-page_container {
     font-family: 'Open Sans', sans-serif;
     display: flex;
