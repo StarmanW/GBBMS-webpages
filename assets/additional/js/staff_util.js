@@ -1,6 +1,6 @@
 //Function to prompt the user for deactivation confirmation
-function deactivateStaffAccPrompt(member_id) {
-    alertify.confirm("Confirm to deactivate staff " + member_id + " account?", function (e) {
+function deleteMemPrompt(member_id) {
+    alertify.confirm("Confirm deactivate staff " + member_id + "?", function (e) {
         if (e) {
             $('#deleteMember').submit();
         }
@@ -12,5 +12,5 @@ function deactivateStaffAccPrompt(member_id) {
             ok: 'Confirm',
             cancel: "Cancel"
         }
-    }).setHeader("Deactivate Staff Account Confirmation").show();
+    }).setHeader("Delete Member Confirmation").show();
 }
