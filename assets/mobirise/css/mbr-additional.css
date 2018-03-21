@@ -2768,7 +2768,11 @@ body {
 .cid-qMsL85WpiQ {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: #ffffff;
+  background-image: url("../../../assets/images/profileBG.jpg");
+}
+
+.cid-qMsL85WpiQ h2 {
+  color:black;
 }
 
 .cid-qMsL85WpiQ .media-container-column {
@@ -2786,7 +2790,6 @@ body {
 
 .cid-qMsL85WpiQ .mbr-testimonial .panel-item {
   background-color: #efefef;
-  background: linear-gradient(#efefef, transparent);
 }
 
 .cid-qMsL85WpiQ .mbr-testimonial .card-block {
@@ -5076,7 +5079,7 @@ body {
 
 .cid-qMsLYhctpH h2 {
   text-align: center;
-  color:white;
+  color: white;
 }
 
 .cid-qMsLYhctpH h4 {
@@ -6277,7 +6280,11 @@ body {
 .cid-qMsLJzqWLk {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: #ffffff;
+  background-image: url("../../../assets/images/profileBG.jpg");
+}
+
+.cid-qMsLJzqWLk h2 {
+  color:black;
 }
 
 .cid-qMsLJzqWLk .media-container-column {
@@ -6295,7 +6302,6 @@ body {
 
 .cid-qMsLJzqWLk .mbr-testimonial .panel-item {
   background-color: #efefef;
-  background: linear-gradient(#efefef, transparent);
 }
 
 .cid-qMsLJzqWLk .mbr-testimonial .card-block {
@@ -7506,7 +7512,7 @@ body {
 
 .cid-qMsMnVkOEI h2 {
   text-align: center;
-  color:white;
+  color: white;
 }
 
 .cid-qMsMnVkOEI h4 {
@@ -9263,7 +9269,7 @@ body {
 .cid-qM5et8Bfce {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: #ffffff;
+  background-image: url('../../../assets/images/donorLogin.jpg');
 }
 
 .cid-qM5et8Bfce .media-container-column {
@@ -9277,12 +9283,14 @@ body {
 
 .cid-qM5et8Bfce .mbr-testimonial {
   flex-basis: auto;
-  margin-top: 5rem;
+}
+
+.cid-qM5et8Bfce h2 {
+  color: white;
 }
 
 .cid-qM5et8Bfce .mbr-testimonial .panel-item {
   background-color: #efefef;
-  background: linear-gradient(#efefef, transparent);
 }
 
 .cid-qM5et8Bfce .mbr-testimonial .card-block {
