@@ -127,10 +127,16 @@ li a {
         padding-bottom: 1%;
         margin-bottom: 1%;
     }
-    /* Tab section end */
     .form-btn {
         width:70%
     }
+    .multitab-btn {
+        padding: 5% 0;
+    }
+    #multitab-left {
+        border-bottom:1px solid;
+    }
+    /* Tab section end */
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
@@ -145,9 +151,14 @@ li a {
         margin: auto;
         width: 70%;
     }
+    /*form selection*/
     .form-btn {
         width:60%
     }
+    #multitab-left {
+        border-right:1px solid;
+    }
+    /*end*/
 }
 
 @media only screen and (min-width: 1200px) {
@@ -162,8 +173,13 @@ li a {
         margin: auto;
         width: 70%;
     }
+    /*tab selection*/
     .form-btn {
         width:30%
     }
+    #multitab-left {
+        border-right:1px solid
+    }
+    /*end*/
 }
 
