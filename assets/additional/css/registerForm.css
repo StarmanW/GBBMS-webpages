@@ -110,34 +110,6 @@ li a {
     margin: auto;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
-    .form-container {
-        border: none;
-        padding: 2%;
-        margin: auto;
-        width: 500px;
-        background-color: #eaeaea;
-    }
-    .row form {
-        margin: auto;
-        width: 70%;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .form-container {
-        border: none;
-        padding: 2%;
-        margin: auto;
-        width: 100%;
-        background-color: #eaeaea;
-    }
-    .row form {
-        margin: auto;
-        width: 70%;
-    }
-}
-
 @media only screen and (min-width: 280px) and (max-width: 767px) {
     /* Tab section */
     li {
@@ -156,4 +128,42 @@ li a {
         margin-bottom: 1%;
     }
     /* Tab section end */
+    .form-btn {
+        width:70%
+    }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    .form-container {
+        border: none;
+        padding: 2%;
+        margin: auto;
+        width: 500px;
+        background-color: #eaeaea;
+    }
+    .row form {
+        margin: auto;
+        width: 70%;
+    }
+    .form-btn {
+        width:60%
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .form-container {
+        border: none;
+        padding: 2%;
+        margin: auto;
+        width: 100%;
+        background-color: #eaeaea;
+    }
+    .row form {
+        margin: auto;
+        width: 70%;
+    }
+    .form-btn {
+        width:30%
+    }
+}
+
