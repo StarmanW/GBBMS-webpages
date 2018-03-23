@@ -11,19 +11,21 @@ const d = new Date();
 var prevMonth = MONTH_NAMES[d.getMonth()-1];
 
 //Render Bar Graph function
-function renderBarGraph(bloodDetails = null) {
+function renderBloodBarGraph(bloodDetails = null) {
     $('.canvasjs-chart-credit').remove();
     
-    barChart = new CanvasJS.Chart("barChartContainer", {
+    barChart = new CanvasJS.Chart("bloodBarChartContainer", {
         animationEnabled: true,
         theme: "light2", // "light1", "light2", "dark1", "dark2"
         title: {
+            fontFamily:'Rubik',
             text: "Blood Type's Amount Donated (" + prevMonth + ")"
         },
         axisY: {
             title: "Packages"
         },
         axisX: {
+            fontFamily:'Rubik',
             title: "Blood Types",
         },
         data: [{
@@ -46,17 +48,18 @@ function renderBarGraph(bloodDetails = null) {
     barChart.render();
 }
 
-//Render Pie Chart function
-function renderPieChart(bloodDetails = null) {
+//Render turn up rate Chart function
+function renderTurnUpChart(bloodDetails = null) {
     $('.canvasjs-chart-credit').remove();
     
-    pieChart = new CanvasJS.Chart("pieChartContainer", {
+    pieChart = new CanvasJS.Chart("turnUpChartContainer", {
         theme: "light2",
         exportFileName: "Doughnut Chart",
         exportEnabled: false,
         animationEnabled: true,
         title:{
-            text: "Blood Donation Turn Up Rate"
+            fontFamily:'Rubik',
+            text: "Blood Donation Turn Up Rate (" + prevMonth + ")"
         },
         legend:{
             cursor: "pointer",
@@ -64,13 +67,12 @@ function renderPieChart(bloodDetails = null) {
         },
         data: [{
             type: "doughnut",
-            innerRadius: 80,
             showInLegend: true,
             toolTipContent: "<b>{name}</b>: ${y} (#percent%)",
             indexLabel: "{name} - #percent%",
             dataPoints: [
-                { y: 850, name: "Attended" },
-                { y: 200, name: "Absent" }
+                { y: 850, fontFamily:'Rubik', name: "Attended" },
+                { y: 200, fontFamily:'Rubik', name: "Absent" }
             ]
         }]
     });
@@ -84,4 +86,29 @@ function renderPieChart(bloodDetails = null) {
         }
         e.pieChart.render();
     }
+}
+
+//Render reservation rate Chart function
+function renderReservationChart(bloodDetails = null) {
+    $('.canvasjs-chart-credit').remove();
+    
+    var chart = new CanvasJS.Chart("resvChartContainer2", {
+        animationEnabled: true,
+        title: {
+            fontFamily: "Rubik",
+            fontWeight: 'Bold',            
+            text: "Reservation Rate (" + prevMonth + ")"
+        },
+        data: [{
+            type: "pie",
+            startAngle: 280,
+            yValueFormatString: "##0",
+            indexLabel: "{y} {label}",
+            dataPoints: [
+                {y: 500, fontFamily:'Rubik', label: "Registered Donors"},
+                {y: 400, fontFamily:'Rubik', label: "Donors Made Reservation"}
+            ]
+        }]
+    });
+    chart.render();
 }
