@@ -8,7 +8,7 @@ const MONTH_NAMES = ["January", "February", "March", "April", "May", "June",
 ];
 
 const d = new Date();
-var prevMonth = MONTH_NAMES[d.getMonth()-1];
+var prevYear = d.getFullYear()-1;
 
 //Render Bar Graph function
 function renderBloodBarGraph(bloodDetails = null) {
@@ -19,7 +19,7 @@ function renderBloodBarGraph(bloodDetails = null) {
         theme: "light2", // "light1", "light2", "dark1", "dark2"
         title: {
             fontFamily:'Rubik',
-            text: "Blood Type's Amount Donated (" + prevMonth + ")"
+            text: "Total Blood Amount Donated (" + prevYear + ")"
         },
         axisY: {
             title: "Packages"
@@ -59,7 +59,7 @@ function renderTurnUpChart(bloodDetails = null) {
         animationEnabled: true,
         title:{
             fontFamily:'Rubik',
-            text: "Blood Donation Turn Up Rate (" + prevMonth + ")"
+            text: "Blood Donation Turn Up Rate (" + prevYear + ")"
         },
         legend:{
             cursor: "pointer",
@@ -99,7 +99,7 @@ function renderReservationChart(bloodDetails = null) {
         animationEnabled: true,
         title:{
             fontFamily:'Rubik',
-            text: "Reservation Rate (" + prevMonth + ")"
+            text: "Reservation Rate (" + prevYear + ")"
         },
         legend:{
             cursor: "pointer",
