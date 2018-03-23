@@ -1,3 +1,8 @@
+//Var declaration
+var barChart;
+var pieChart;
+
+//Constant declaration for months/dates
 const MONTH_NAMES = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
@@ -5,9 +10,7 @@ const MONTH_NAMES = ["January", "February", "March", "April", "May", "June",
 const d = new Date();
 var prevMonth = MONTH_NAMES[d.getMonth()-1];
 
-var barChart;
-var pieChart;
-
+//Render Bar Graph function
 function renderBarGraph(bloodDetails = null) {
     $('.canvasjs-chart-credit').remove();
     
@@ -43,6 +46,7 @@ function renderBarGraph(bloodDetails = null) {
     barChart.render();
 }
 
+//Render Pie Chart function
 function renderPieChart(bloodDetails = null) {
     $('.canvasjs-chart-credit').remove();
     
