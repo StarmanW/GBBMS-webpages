@@ -26,4 +26,49 @@ body {
     background: #aaa;
     margin: auto;
     width: 95%;
+    
+}
+
+.fa-angle-up {
+    position: fixed; 
+    z-index: 1;
+    margin-left: 2%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.fa-angle-up:hover,
+.fa-angle-up:focus,
+.fa-angle-up.focus,
+.fa-angle-up.active {
+    color: white;
+    background-color: #0d6786;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 580px) {
+    .fa-angle-up {
+        top: 80px;
+        height: 30px;
+        width: 30px;
+        margin-left: .5%;
+    }
+    
+}
+@media only screen and (min-width: 450px) and (max-width: 1200px) {
+
+}
+@media only screen and (min-width: 1200px) {
+    .fa-angle-up {
+        margin-left: 2%;
+    }
 }
