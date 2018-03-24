@@ -82,18 +82,18 @@
     </section>
     <!-- Sidebar -->
     <div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
-        <a href="./homepage-hr.html" class="w3-bar-item" id="homepageStyle">
-            <img src="assets/images/gLogo.png" alt="Gleneagles Logo" title="" style="height: 5rem;"> Gleneagles KK
-        </a>
-        <span style="text-align: center; color: white" class="w3-bar-item">View Reports</span>
-        <hr id="sideBarHR">
+        <div class="sidebar-wrapper">
+            <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+            <br>
+                
+            <span style="text-align: center; color: white" class="w3-bar-item">View Reports</span>
+            <hr id="sideBarHR">
 
-        <a href="./annualReport.html" class="w3-bar-item w3-button">Annual Report</a>
-        <a href="./monthlyReport.html" class="w3-bar-item w3-button">Monthly Report</a>
-        <a href="#" class="w3-bar-item w3-button">Booking Cancellation Report</a>
-        <a href="#" class="w3-bar-item w3-button">Reservation List</a>
-        <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
-
+            <a href="./annualReport.html" class="w3-bar-item w3-button">Annual Report</a>
+            <a href="./monthlyReport.html" class="w3-bar-item w3-button">Monthly Report</a>
+            <a href="./exceptReport.html" class="w3-bar-item w3-button">Reservation Cancellation Report</a>
+            <a href="./resvReport.html" class="w3-bar-item w3-button">Reservation List</a>
+        </div>
     </div>
 
     <!-- Page Content -->
