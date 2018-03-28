@@ -4,6 +4,10 @@
     padding-bottom: 0;
 }
 
+#select-wrapper2 {
+	padding-top: 2%;
+}
+
 .table th {
     font-size: 13px;
 } 

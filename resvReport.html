@@ -110,10 +110,18 @@
 
             <div class="container align-center">
                 <div class="card" id="cardHeader" style="margin:0">
-                    <div class="card-header main-color-bg">
-                        <h3 class="card-title">Detailed Reservation Report</h3>
-                        
-                    </div>
+					
+					<div class="card-header main-color-bg">
+						<div class="select-wrapper" id="select-wrapper1">
+							<select class="select drop-year">
+								<option value="" selected="selected">Select a Year</option>
+								<option value="2017">2017</option>
+								<option value="2016">2016</option>
+								<option value="2015">2015</option>
+							</select>
+						</div>
+						<h3 class="card-title">Detailed Reservation Report</h3>
+					</div>
                     <section class="section-table cid-qEBSaDdCCZ" id="table1-t" data-rv-view="1214">
                             <div class="container container-table">
                                 <div class="table-wrapper">
@@ -169,23 +177,16 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div class="container table-info-container">
-                                        <div class="row info">
-                                            <div class="col-md-6">
-                                                <div class="dataTables_info mbr-fonts-style display-7">
-                                                    <span class="infoBefore">Showing</span>
-                                                    <span class="inactive infoRows"></span>
-                                                    <span class="infoAfter">entries</span>
-                                                    <span class="infoFilteredBefore">(filtered from</span>
-                                                    <span class="inactive infoRows"></span>
-                                                    <span class="infoFilteredAfter"> total entries)</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6"></div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
+							<div class="select-wrapper" id="select-wrapper2">
+								<select>
+									<option value="" selected="selected">Select a Year</option>
+									<option value="2017">2017</option>
+									<option value="2016">2016</option>
+									<option value="2015">2015</option>
+								</select>
+							</div>
                         </section>
                 </div>
             </div>
